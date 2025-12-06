@@ -13,7 +13,7 @@ const SocialsSection: React.FC<SocialsSectionProps> = ({ items }) => {
     return (
         <section className="py-20 bg-[#F2F2F2] text-center">
             {/* Title */}
-            <h2 className="text-[#5C2D84] text-xl md:text-2xl font-semibold uppercase tracking-wider">
+            <h2 className="text-[#5C2D84] text-xl md:text-3xl font-marcellus uppercase tracking-wider">
                 Check Our Stories
             </h2>
 
@@ -42,7 +42,7 @@ const SocialsSection: React.FC<SocialsSectionProps> = ({ items }) => {
                         <img
                             src={post.image}
                             alt="Ranowell Hotel Social Post"
-                            className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-100 object-cover hover:scale-105 transition-transform duration-300"
                         />
                     </a>
                 ))}

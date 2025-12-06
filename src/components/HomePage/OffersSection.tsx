@@ -12,10 +12,16 @@ interface OffersSectionProps {
 const OffersSection: React.FC<OffersSectionProps> = ({ items }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const itemsPerPage = 3;
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+
     // Auto-slide every 4 seconds
     useEffect(() => {
         const timer = setInterval(() => {
-            setCurrentIndex((prev) => (prev + 1) % items.length);
+            setCurrentIndex((prev) => {
+                const nextPage = Math.floor(prev / itemsPerPage) + 1;
+                return (nextPage % totalPages) * itemsPerPage;
+            });
         }, 4000);
         return () => clearInterval(timer);
     }, [items.length]);
@@ -23,34 +29,43 @@ const OffersSection: React.FC<OffersSectionProps> = ({ items }) => {
     return (
         <section className="py-16 bg-white text-center">
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-wide text-[#5C2D84] uppercase">
+            <h2 className="max-w-2xl mx-auto text-2xl md:text-3xl font-marcellus  tracking-wide text-[#6E249D] uppercase">
                 Exclusive Offers, Unforgettable Experiences
             </h2>
 
             {/* Subtitle */}
-            <p className="max-w-3xl mx-auto text-gray-600 mt-4 text-sm leading-relaxed">
+            <p className="max-w-3xl mx-auto text-gray-600 mt-10 text-base leading-relaxed">
                 Discover exclusive offers designed to enhance your stay with special in-room amenities,
                 complimentary upgrades on availability, spa discounts and more. Choose from romantic
                 getaways to extended vacations, at Ranowell Hotels and Resorts.
             </p>
 
             {/* Carousel Container */}
-            <div className="relative max-w-6xl mx-auto mt-12 overflow-hidden">
+            <div className="relative max-w-7xl mx-auto mt-12 overflow-hidden">
 
                 <div
                     className="flex transition-transform duration-700"
-                    style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                    style={{ transform: `translateX(-${(currentIndex / itemsPerPage) * 100}%)` }}
                 >
                     {items.map((item, idx) => (
-                        <div key={idx} className="min-w-full flex justify-center px-4">
-                            {/* Image Card */}
-                            <div className="w-full max-w-sm">
+                        <div
+                            key={idx}
+                            className="basis-1/3 flex-shrink-0 px-4"
+                        >
+                            <div className="w-full relative">
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-full h-80 object-cover rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                                    className="w-full h-130 object-cover shadow-md
+                                               hover:scale-105 transition-transform duration-300"
                                 />
-                                <h3 className="mt-3 text-lg font-semibold tracking-widest text-black uppercase">
+                                <h3
+                                    className="
+                                        absolute bottom-4 left-1/2 -translate-x-1/2  w-3/4
+                                        text-center text-xl tracking-widest text-white
+                                        font-marcellus uppercase drop-shadow-lg
+                                    "
+                                >
                                     {item.title}
                                 </h3>
                             </div>
@@ -60,14 +75,17 @@ const OffersSection: React.FC<OffersSectionProps> = ({ items }) => {
 
                 {/* Pagination Dots */}
                 <div className="flex justify-center gap-2 mt-6">
-                    {items.map((_, idx) => (
+                    {Array.from({ length: totalPages }).map((_, pageIndex) => (
                         <div
-                            key={idx}
-                            onClick={() => setCurrentIndex(idx)}
-                            className={`w-3 h-3 rounded-full cursor-pointer transition-all ${
-                                currentIndex === idx ? "bg-gray-700" : "bg-gray-300"
-                            }`}
-                        ></div>
+                            key={pageIndex}
+                            onClick={() => setCurrentIndex(pageIndex * itemsPerPage)}
+                            className={`
+                                w-3 h-3 rounded-full cursor-pointer transition-all
+                                ${Math.floor(currentIndex / itemsPerPage) === pageIndex
+                                                        ? "bg-gray-700 scale-110"
+                                                        : "bg-gray-300"}
+                              `}
+                        />
                     ))}
                 </div>
             </div>

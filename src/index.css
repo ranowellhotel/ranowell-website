@@ -1,4 +1,11 @@
 /* src/index.css */
+@font-face {
+    font-family: 'Marcellus';
+    src: url('/src/assets/fonts/MarcellusSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 /* Tailwind v4 + tw-animate */
@@ -10,6 +17,7 @@
 
 /* --- Theme tokens (inline) --- */
 @theme inline {
+  --font-marcellus: 'Marcellus', serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

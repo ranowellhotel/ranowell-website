@@ -10,9 +10,9 @@ import SocialsSection from "@/components/HomePage/SocialsSection";
 // IMAGES — Replace these with your real assets
 import HeaderImg from "@/assets/headerHome.png";
 
-import BuffetImg from "@/assets/offers/buffet.png";
-import ReceptionImg from "@/assets/offers/reception.png";
-import RoomImg from "@/assets/offers/room.png";
+import BuffetImg from "@/assets/offers/buffet2.png";
+import ReceptionImg from "@/assets/offers/reception2.png";
+import RoomImg from "@/assets/offers/room2.png";
 
 import Story1 from "@/assets/stories/story1.png";
 import Story2 from "@/assets/stories/story2.png";
@@ -53,6 +53,9 @@ const HomePage: React.FC = () => {
                     { image: BuffetImg, title: "Wedding Buffets" },
                     { image: ReceptionImg, title: "Reception Halls" },
                     { image: RoomImg, title: "Hotel Rooms" },
+                    { image: ReceptionImg, title: "Reception Halls" },
+                    { image: BuffetImg, title: "Wedding Buffets" },
+                    { image: RoomImg, title: "Hotel Rooms" },
                 ]}
             />
 
@@ -62,7 +65,7 @@ const HomePage: React.FC = () => {
                     {
                         image: Story1,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful...",
+                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
                         author: "Emma & Jack",
                         location: "United Kingdom",
                         bgColor: "#F0E1FA",
@@ -71,7 +74,7 @@ const HomePage: React.FC = () => {
                     {
                         image: Story2,
                         quote:
-                            "The breakfast buffet with local dishes like hoppers and kiribath was unforgettable!",
+                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
                         author: "Emma & Jack",
                         location: "United Kingdom",
                         bgColor: "#FFFFFF",
@@ -79,7 +82,7 @@ const HomePage: React.FC = () => {
                     {
                         image: Story3,
                         quote:
-                            "Every staff member went above and beyond to make our stay memorable.",
+                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
                         author: "Emma & Jack",
                         location: "United Kingdom",
                         bgColor: "#F0E1FA",
@@ -87,7 +90,7 @@ const HomePage: React.FC = () => {
                     {
                         image: Story4,
                         quote:
-                            "The food, ambience, and hospitality were all perfect.",
+                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
                         author: "Emma & Jack",
                         location: "United Kingdom",
                         bgColor: "#FFFFFF",
@@ -95,7 +98,7 @@ const HomePage: React.FC = () => {
                     {
                         image: Story5,
                         quote:
-                            "Loved the peaceful atmosphere. Ideal for a romantic getaway.",
+                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
                         author: "Emma & Jack",
                         location: "United Kingdom",
                         bgColor: "#F0E1FA",
@@ -103,7 +106,7 @@ const HomePage: React.FC = () => {
                     {
                         image: Story6,
                         quote:
-                            "A beautiful blend of luxury and Sri Lankan charm!",
+                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
                         author: "Emma & Jack",
                         location: "United Kingdom",
                         bgColor: "#FFFFFF",

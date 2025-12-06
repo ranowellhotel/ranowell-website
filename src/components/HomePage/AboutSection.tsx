@@ -23,7 +23,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
 
                 {/* ---------- LEFT: FAQ Section ---------- */}
                 <div>
-                    <h2 className="text-[#5C2D84] text-2xl md:text-3xl font-semibold uppercase tracking-wide mb-8">
+                    <h2 className="text-[#5C2D84] text-2xl md:text-3xl font-marcellus uppercase tracking-wide mb-8">
                         A Little Bit More to Help You <br /> Plan Your Stay
                     </h2>
 
@@ -38,8 +38,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
                                 <div className="flex justify-between items-center text-gray-900 font-medium">
                                     <span>{faq.question}</span>
                                     <span className="text-xl">
-                    {openIndex === idx ? "−" : "+"}
-                  </span>
+                                        {openIndex === idx ? "−" : "+"}
+                                    </span>
                                 </div>
 
                                 {/* Answer */}
@@ -62,7 +62,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
                             key={i}
                             src={img}
                             alt="About Ranowell"
-                            className="w-full h-56 object-cover rounded-md shadow-md"
+                            className="w-full h-72 object-cover shadow-md"
                         />
                     ))}
                 </div>

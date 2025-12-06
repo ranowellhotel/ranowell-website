@@ -18,12 +18,12 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({ items }) => {
     return (
         <section className="py-20 bg-[#F2F2F2]">
             {/* Title */}
-            <h2 className="text-center text-xl md:text-2xl font-semibold tracking-widest text-[#5C2D84] uppercase">
+            <h2 className="text-center text-xl md:text-3xl font-marcellus tracking-widest text-[#5C2D84] uppercase">
                 The Stories of Ranowell
             </h2>
 
             {/* Subtitle */}
-            <p className="max-w-4xl mx-auto text-center text-gray-600 mt-4 text-sm md:text-base leading-relaxed px-4">
+            <p className="max-w-4xl mx-auto text-center text-gray-600 mt-10 text-sm md:text-base leading-relaxed px-4">
                 Our guest testimonials offer a glimpse into the heart of our Sri Lankan hospitality —
                 where every stay becomes a cherished memory. Through their stories, you’ll discover
                 the warmth of our people, the flavors of authentic island cuisine, and the beauty of
@@ -46,7 +46,11 @@ const StoriesSection: React.FC<StoriesSectionProps> = ({ items }) => {
                             className={`
                                 w-full
                                 ${isMiddleColumn ? "lg:mt-20" : ""}
+                                transition-all duration-500 ease-out
+                                hover:scale-102 hover:-translate-y-2
+                                cursor-pointer
                             `}
+                            style={{ animationDelay: `${i * 120}ms` }}
                         >
                             <CommentCard
                                 image={story.image}
