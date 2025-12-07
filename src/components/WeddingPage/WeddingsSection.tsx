@@ -21,25 +21,38 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                                                              buttonLink = "#"
                                                          }) => {
     return (
-        <section className="py-20 bg-white px-6">
+        <section
+            className="py-20 bg-white px-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+        >
             <div className="max-w-7xl mx-auto">
 
                 {/* -------- GRID: TEXT LEFT, DESCRIPTION RIGHT -------- */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
 
                     {/* LEFT TEXT */}
-                    <div>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-delay="200"
+                        data-aos-duration="900"
+                    >
                         <p className="text-xs tracking-widest uppercase text-[#5C2D84] font-semibold mb-2">
                             {label}
                         </p>
 
-                        <h2 className="text-[#5C2D84] text-3xl md:text-4xl font-semibold leading-snug">
+                        <h2 className="text-[#5C2D84] text-3xl md:text-4xl font-marcellus leading-snug">
                             {title}
                         </h2>
                     </div>
 
                     {/* RIGHT TEXT */}
-                    <div>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-delay="250"
+                        data-aos-duration="900"
+                    >
                         <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                             {description}
                         </p>
@@ -48,13 +61,23 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                 </div>
 
                 {/* -------- 3 IMAGE GRID -------- */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
                     {items.map((item, idx) => (
-                        <div key={idx} className="text-center">
+                        <div
+                            key={idx}
+                            className="text-center opacity-0"
+                            data-aos="fade-up"
+                            data-aos-delay={350 + idx * 150}
+                            data-aos-duration="900"
+                        >
                             <img
                                 src={item.image}
                                 alt={item.coupleNames}
-                                className="w-full h-64 object-cover rounded-lg shadow-md"
+                                className="w-full h-85 object-cover rounded-tl-xl rounded-br-xl shadow-lg"
                             />
                             <p className="mt-4 text-gray-800 font-medium">
                                 {item.coupleNames}
@@ -64,7 +87,12 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                 </div>
 
                 {/* -------- BUTTON -------- */}
-                <div className="text-center">
+                <div
+                    className="text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                    data-aos-duration="900"
+                >
                     <a
                         href={buttonLink}
                         target="_blank"

@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-[#5C2D84] text-white pt-16 pb-10">
+        <footer className="bg-[#61338A] text-white pt-16 pb-10">
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Top Divider */}
@@ -18,15 +18,12 @@ const Footer: React.FC = () => {
                         <img
                             src={Logo}
                             alt="Ranowell Hotel Logo"
-                            className="h-20 sm:h-24 object-contain mb-3"
+                            className="h-40 sm:h-24 object-contain mb-3"
                         />
-                        <p className="tracking-widest text-xs sm:text-sm">
-                            RANOWELL HOTEL
-                        </p>
                     </div>
 
                     {/* MIDDLE: NAVIGATION */}
-                    <div className="flex flex-col gap-3 text-center sm:text-left tracking-widest text-xs sm:text-sm">
+                    <div className="flex flex-col gap-3 text-center font-questrial sm:text-left tracking-widest text-xs sm:text-sm">
                         <span className="cursor-pointer hover:opacity-75">HOME</span>
                         <span className="cursor-pointer hover:opacity-75">WEDDINGS</span>
                         <span className="cursor-pointer hover:opacity-75">ACCOMMODATION</span>
@@ -35,15 +32,15 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* RIGHT: CONTACT INFO */}
-                    <div className="flex flex-col gap-4 tracking-wide text-center sm:text-left text-xs sm:text-sm">
+                    <div className="flex flex-col gap-4 tracking-wide text-center font-questrial sm:text-left text-xs sm:text-sm">
 
                         <div>
-                            <p className="tracking-widest font-semibold text-sm sm:text-base">RANOWELL HOTEL</p>
+                            <p className="tracking-widest font-questrial text-sm sm:text-base">RANOWELL HOTEL</p>
                             <p>162/4 CHILAW ROAD</p>
                             <p>KOCHCHIKADE, NEGOMBO 11500</p>
                         </div>
 
-                        <p className="font-semibold text-lg tracking-widest">
+                        <p className="font-questrial text-lg tracking-widest">
                             +94 112 433 751
                         </p>
 
@@ -70,7 +67,7 @@ const Footer: React.FC = () => {
                 <div className="w-full border-t border-white/40 mt-14 mb-4"></div>
 
                 {/* COPYRIGHT */}
-                <p className="text-center text-[10px] sm:text-xs tracking-wider opacity-90">
+                <p className="text-center font-questrial text-[10px] sm:text-sm tracking-wider opacity-90">
                     © {new Date().getFullYear()} Ranowell Hotel. All rights reserved. | Developed by
                 </p>
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 
-// Dummy images — replace with real assets
+// Images
 import GalleryHeaderImg from "@/assets/galleryheader.png";
 import Img from "@/assets/gallery/img.png";
 import Img1 from "@/assets/gallery/img_1.png";
@@ -19,7 +19,7 @@ import Img12 from "@/assets/gallery/img_12.png";
 
 const categories = ["ALL", "WEDDINGS", "DINING", "ACCOMMODATION"];
 
-// Dummy data — each image belongs to a category
+// Dummy data
 const galleryItems = [
     { src: Img, category: "WEDDINGS" },
     { src: Img1, category: "DINING" },
@@ -38,60 +38,110 @@ const galleryItems = [
 
 const GalleryPage: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState("ALL");
+    const [displayedImages, setDisplayedImages] = useState(galleryItems);
+    const [isTransitioning, setIsTransitioning] = useState(false);
 
-    // Filter logic
-    const filteredImages =
-        activeCategory === "ALL"
-            ? galleryItems
-            : galleryItems.filter((item) => item.category === activeCategory);
+    // Handle smooth fade-out → fade-in transition
+    const handleCategoryChange = (category: string) => {
+        if (category === activeCategory) return;
+
+        setIsTransitioning(true);
+
+        setTimeout(() => {
+            setActiveCategory(category);
+
+            if (category === "ALL") {
+                setDisplayedImages(galleryItems);
+            } else {
+                setDisplayedImages(
+                    galleryItems.filter((item) => item.category === category)
+                );
+            }
+        }, 300);
+
+        setTimeout(() => setIsTransitioning(false), 600);
+    };
 
     return (
         <div className="w-full">
 
-            {/* ----------------------- */}
-            {/* HEADER SECTION */}
-            {/* ----------------------- */}
+            {/* HEADER */}
             <Header
-                image={GalleryHeaderImg} // Replace with gallery header image
+                image={GalleryHeaderImg}
                 title="Explore Moments of Beauty Captured in Every Detail"
                 subtitle="RANOWELL GALLERY"
                 overlayColor="rgba(0,0,0,0.35)"
             />
 
-            {/* ----------------------- */}
             {/* PAGE TITLE */}
-            {/* ----------------------- */}
             <div className="text-center mt-10">
                 <h2 className="text-[22px] tracking-widest text-purple-700 font-medium">
                     GALLERY
                 </h2>
             </div>
 
-            {/* ----------------------- */}
-            {/* CATEGORY NAVIGATION */}
-            {/* ----------------------- */}
-            <div className="flex justify-center gap-10 mt-6 mb-8">
-                {categories.map((cat) => (
-                    <button
-                        key={cat}
-                        onClick={() => setActiveCategory(cat)}
-                        className={`text-sm tracking-widest uppercase ${
-                            activeCategory === cat
-                                ? "font-semibold text-purple-700"
-                                : "text-gray-500 hover:text-black"
-                        }`}
-                    >
-                        {cat}
-                    </button>
-                ))}
+            {/* CATEGORY TABS — PREMIUM V2 */}
+            <div className="relative flex justify-center gap-10 mt-6 mb-10">
+                {categories.map((cat) => {
+                    const isActive = activeCategory === cat;
+
+                    return (
+                        <button
+                            key={cat}
+                            onClick={() => handleCategoryChange(cat)}
+                            className={`
+                                group relative pb-2 text-sm tracking-widest uppercase 
+                                transition-all duration-300
+
+                                ${isActive
+                                ? "text-purple-700 font-semibold"
+                                : "text-gray-500 hover:text-gray-800"
+                            }
+
+                                hover:-translate-y-[2px]
+                            `}
+                        >
+                            {cat}
+
+                            {/* Glow behind active tab */}
+                            {isActive && (
+                                <span
+                                    className="
+                                        absolute -inset-x-3 -inset-y-1
+                                        bg-purple-200/30 blur-md rounded-full
+                                        pointer-events-none animate-fade-in
+                                    "
+                                ></span>
+                            )}
+
+                            {/* Underline with smooth sliding animation */}
+                            <span
+                                className={`
+                                    absolute left-0 -bottom-[2px] h-[2px] bg-purple-700 
+                                    transition-all duration-500 ease-out
+                                    ${isActive ? "w-full" : "w-0 group-hover:w-full"}
+                                `}
+                            ></span>
+                        </button>
+                    );
+                })}
             </div>
 
-            {/* ----------------------- */}
             {/* GALLERY GRID */}
-            {/* ----------------------- */}
-            <div className="max-w-6xl mx-auto px-4 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                {filteredImages.map((item, index) => (
-                    <div key={index} className="w-full">
+            <div
+                className={`
+                    max-w-6xl mx-auto px-4 pb-20 
+                    grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5
+                    transition-opacity duration-500
+                    ${isTransitioning ? "opacity-0" : "opacity-100"}
+                `}
+            >
+                {displayedImages.map((item, index) => (
+                    <div
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 80}
+                    >
                         <img
                             src={item.src}
                             alt="Gallery"
