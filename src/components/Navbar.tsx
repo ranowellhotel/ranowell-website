@@ -27,17 +27,37 @@ const Navbar: React.FC = () => {
 
                     {/* Mobile hamburger (left side) */}
                     <button
-                        className="md:hidden text-3xl text-[#6A1B9A]"
+                        aria-label="Toggle menu"
                         onClick={() => setMenuOpen(!menuOpen)}
+                        className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center gap-[6px]"
                     >
-                        ☰
+                        {/* Top bar */}
+                        <span
+                            className={`block h-[2px] w-7 bg-[#6A1B9A] transition-all duration-300 ease-in-out
+                            ${menuOpen ? "rotate-45 translate-y-[8px]" : ""}`}
+                        />
+
+                        {/* Middle bar */}
+                        <span
+                            className={`block h-[2px] w-7 bg-[#6A1B9A] transition-all duration-300 ease-in-out
+                            ${menuOpen ? "opacity-0" : ""}`}
+                        />
+
+                        {/* Bottom bar */}
+                        <span
+                            className={`block h-[2px] w-7 bg-[#6A1B9A] transition-all duration-300 ease-in-out
+                            ${menuOpen ? "-rotate-45 -translate-y-[8px]" : ""}`}
+                        />
                     </button>
+
 
                     {/* Book Now Button (right aligned) */}
                     <button
                         className="
+                            hidden md:block
                             bg-[#6A1B9A] text-white text-sm
-                            px-11 py-3 rounded-tl-3xl  rounded-sm font-base tracking-widest
+                            px-11 py-3 rounded-tl-3xl rounded-sm
+                            font-base tracking-widest
                             hover:bg-[#58167F] transition
                             ml-auto
                         "
@@ -69,6 +89,24 @@ const Navbar: React.FC = () => {
                         <NavItem to="/weddings" label="WEDDINGS" onClick={() => setMenuOpen(false)} />
                         <NavItem to="/accommodation" label="ACCOMMODATION" onClick={() => setMenuOpen(false)} />
                         <NavItem to="/gallery" label="GALLERY" onClick={() => setMenuOpen(false)} />
+
+                        {/* Divider */}
+                        <div className="w-24 h-px bg-gray-300 my-2" />
+
+                        {/* Mobile Book Now */}
+                        <Link
+                            to="/booking"
+                            onClick={() => setMenuOpen(false)}
+                            className="
+                                bg-[#6A1B9A] text-white
+                                px-8 py-3 rounded-tl-3xl rounded-sm
+                                font-base tracking-widest text-sm
+                                hover:bg-[#58167F]
+                                transition
+                            "
+                        >
+                            BOOK NOW
+                        </Link>
                     </div>
                 )}
             </nav>
