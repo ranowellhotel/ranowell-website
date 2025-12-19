@@ -26,14 +26,15 @@ import About2 from "@/assets/about/about2.png";
 import About3 from "@/assets/about/about3.png";
 import About4 from "@/assets/about/about4.png";
 
-import Social1 from "@/assets/socials/social1.png";
-import Social2 from "@/assets/socials/social1.png";
-import Social3 from "@/assets/socials/social1.png";
-import Social4 from "@/assets/socials/social1.png";
-import Social5 from "@/assets/socials/social1.png";
-import Social6 from "@/assets/socials/social1.png";
-import Social7 from "@/assets/socials/social1.png";
-import Social8 from "@/assets/socials/social1.png";
+import Social2 from "@/assets/socials/s2.jpg";
+import Social3 from "@/assets/socials/s3.png";
+import Social4 from "@/assets/socials/s4.png";
+import Social5 from "@/assets/socials/s5.png";
+import Social6 from "@/assets/socials/s6.png";
+import Social7 from "@/assets/socials/s7.png";
+import Social8 from "@/assets/socials/s8.png";
+import Social9 from "@/assets/socials/s9.png";
+
 
 const HomePage: React.FC = () => {
     return (
@@ -129,14 +130,38 @@ const HomePage: React.FC = () => {
             {/* ---------------- SOCIALS SECTION ---------------- */}
             <SocialsSection
                 items={[
-                    { image: Social1, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social2, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social3, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social4, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social5, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social6, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social7, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social8, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
+                    {
+                        image: Social2,
+                        postUrl: "https://www.facebook.com/share/p/17S96fzrq8/",
+                    },
+                    {
+                        image: Social3,
+                        postUrl: "https://www.facebook.com/ranowellhotels/posts/654321",
+                    },
+                    {
+                        image: Social4,
+                        postUrl: "https://www.facebook.com/share/r/1AZVv1dZvm/",
+                    },
+                    {
+                        image: Social5,
+                        postUrl: "https://www.facebook.com/share/p/17CfSxWxXe/",
+                    },
+                    {
+                        image: Social6,
+                        postUrl: "https://www.facebook.com/share/p/1DKqXX1eZe/",
+                    },
+                    {
+                        image: Social7,
+                        postUrl: "https://www.facebook.com/share/p/1N7K4B2EFe/",
+                    },
+                    {
+                        image: Social8,
+                        postUrl: "https://www.facebook.com/share/p/19yjkr36xh/",
+                    },
+                    {
+                        image: Social9,
+                        postUrl: "https://www.facebook.com/share/p/1DTXUy1Gxv/",
+                    }
                 ]}
             />
 
