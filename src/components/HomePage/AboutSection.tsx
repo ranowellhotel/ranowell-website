@@ -19,12 +19,14 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
 
     return (
         <section className="py-12 md:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
 
                 {/* ---------- LEFT: FAQ ---------- */}
                 <div>
-                    <h2 className="text-[#5C2D84] text-xl md:text-3xl font-marcellus uppercase tracking-wide mb-6 md:mb-8">
-                        A Little Bit More to Help You <br className="hidden sm:block" /> Plan Your Stay
+                    <h2 className="text-[#5C2D84] text-lg sm:text-xl md:text-3xl font-marcellus uppercase tracking-wide mb-6 md:mb-8 leading-snug">
+                        A Little Bit More to Help You
+                        <br className="hidden sm:block" />
+                        Plan Your Stay
                     </h2>
 
                     <div className="space-y-4">
@@ -35,8 +37,8 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
                                 onClick={() => toggleFAQ(idx)}
                             >
                                 {/* Question */}
-                                <div className="flex justify-between items-start gap-4 text-gray-900 font-medium">
-                                    <span className="text-sm md:text-base leading-relaxed">
+                                <div className="flex justify-between items-start gap-3 text-gray-900 font-medium">
+                                    <span className="text-sm sm:text-base leading-relaxed">
                                         {faq.question}
                                     </span>
                                     <span className="text-xl text-[#5C2D84] shrink-0">
@@ -46,10 +48,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
 
                                 {/* Answer */}
                                 <div
-                                    className={`mt-2 text-sm text-gray-600 leading-relaxed transition-all duration-300 overflow-hidden
+                                    className={`mt-2 text-sm sm:text-base text-gray-600 leading-relaxed overflow-hidden transition-all duration-300
                                         ${
                                         openIndex === idx
-                                            ? "max-h-40 opacity-100"
+                                            ? "max-h-48 opacity-100"
                                             : "max-h-0 opacity-0"
                                     }
                                     `}
@@ -62,24 +64,27 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
                 </div>
 
                 {/* ---------- RIGHT: IMAGES ---------- */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {images.map((img, i) => (
-                        <img
+                        <div
                             key={i}
-                            src={img}
-                            alt="About Ranowell"
-                            className="
-                                w-full
-                                h-full sm:h-64 md:h-72
-                                object-cover
-                                rounded-md
-                                shadow-md
-                                transition-all duration-500
-                                hover:scale-102 hover:shadow-xl
-                            "
-                        />
+                            className="overflow-hidden rounded-md shadow-md"
+                        >
+                            <img
+                                src={img}
+                                alt="About Ranowell"
+                                className="
+                                    w-full
+                                    h-52 sm:h-60 md:h-72
+                                    object-cover
+                                    transition-transform duration-500
+                                    hover:scale-105
+                                "
+                            />
+                        </div>
                     ))}
                 </div>
+
             </div>
         </section>
     );
