@@ -65,7 +65,7 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                             href={item.pixiesetUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block text-center group opacity-0"
+                            className="block text-center group cursor-pointer relative"
                             data-aos="fade-up"
                             data-aos-delay={350 + idx * 150}
                             data-aos-duration="900"
@@ -75,10 +75,10 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                                     src={item.image}
                                     alt={item.coupleNames}
                                     className="
-                                        w-full h-85 object-cover
-                                        transition-transform duration-500
-                                        group-hover:scale-105
-                                    "
+                        w-full h-85 object-cover
+                        transition-transform duration-500
+                        group-hover:scale-105
+                    "
                                 />
                             </div>
 
