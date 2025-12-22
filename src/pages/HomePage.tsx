@@ -9,7 +9,7 @@ import SocialsSection from "@/components/HomePage/SocialsSection";
 
 // IMAGES — Replace these with your real assets
 // import HeaderImg from "@/assets/headerHome.png";
-import HeaderVideo from "@/assets/videos/ranowell_hero_vid.mp4";
+import HeaderVideo from "@/assets/videos/ranowell_hero_vid_2.mp4";
 
 
 import BuffetImg from "@/assets/offers/buffet2.png";
