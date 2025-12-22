@@ -3,6 +3,7 @@ import React from "react";
 interface WeddingItem {
     image: string;
     coupleNames: string;
+    pixiesetUrl: string;
 }
 
 interface WeddingsSectionProps {
@@ -18,7 +19,7 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                                                              title,
                                                              description,
                                                              items,
-                                                             buttonLink = "#"
+                                                             buttonLink = "#",
                                                          }) => {
     return (
         <section
@@ -33,11 +34,7 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-14">
 
                     {/* LEFT TEXT */}
-                    <div
-                        data-aos="fade-right"
-                        data-aos-delay="200"
-                        data-aos-duration="900"
-                    >
+                    <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="900">
                         <p className="text-xs tracking-widest uppercase text-[#5C2D84] font-semibold mb-2">
                             {label}
                         </p>
@@ -48,11 +45,7 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                     </div>
 
                     {/* RIGHT TEXT */}
-                    <div
-                        data-aos="fade-left"
-                        data-aos-delay="250"
-                        data-aos-duration="900"
-                    >
+                    <div data-aos="fade-left" data-aos-delay="250" data-aos-duration="900">
                         <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                             {description}
                         </p>
@@ -60,29 +53,39 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
 
                 </div>
 
-                {/* -------- 3 IMAGE GRID -------- */}
+                {/* -------- IMAGE GRID -------- */}
                 <div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
                     data-aos="fade-up"
                     data-aos-delay="300"
                 >
                     {items.map((item, idx) => (
-                        <div
+                        <a
                             key={idx}
-                            className="text-center opacity-0"
+                            href={item.pixiesetUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block text-center group opacity-0"
                             data-aos="fade-up"
                             data-aos-delay={350 + idx * 150}
                             data-aos-duration="900"
                         >
-                            <img
-                                src={item.image}
-                                alt={item.coupleNames}
-                                className="w-full h-85 object-cover rounded-tl-xl rounded-br-xl shadow-lg"
-                            />
-                            <p className="mt-4 text-gray-800 font-medium">
+                            <div className="overflow-hidden rounded-tl-xl rounded-br-xl shadow-lg">
+                                <img
+                                    src={item.image}
+                                    alt={item.coupleNames}
+                                    className="
+                                        w-full h-85 object-cover
+                                        transition-transform duration-500
+                                        group-hover:scale-105
+                                    "
+                                />
+                            </div>
+
+                            <p className="mt-4 text-gray-800 font-medium group-hover:text-[#5C2D84] transition">
                                 {item.coupleNames}
                             </p>
-                        </div>
+                        </a>
                     ))}
                 </div>
 
@@ -96,6 +99,7 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                     <a
                         href={buttonLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-block bg-[#5C2D84] text-white px-8 py-3 rounded-md tracking-wider text-sm hover:bg-[#4a1f6e] transition"
                     >
                         VIEW MORE ON PIXIESET
