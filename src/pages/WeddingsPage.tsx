@@ -49,7 +49,7 @@ const WeddingsPage: React.FC = () => {
                     { image: Couple2, coupleNames: "Christeen & Pramodh" },
                     { image: Couple3, coupleNames: "Maleesha & Marlon" },
                 ]}
-                buttonLink="https://pixieset.com" // replace with real link
+                buttonLink="https://ranowellhotel.pixieset.com/" // replace with real link
             />
 
             {/* ---------------- HEADER SECTION (BANQUET HERO) ---------------- */}

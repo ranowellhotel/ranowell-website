@@ -50,7 +50,7 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
                                 <a
                                     href={item.buttonLink || "#"}
                                     target="_blank"
-                                    className="inline-block bg-[#5C2D84] text-white px-7 py-3 rounded-md text-sm tracking-widest hover:bg-[#4a1f6e] transition"
+                                    className="inline-block bg-[#5C2D84] text-white px-7 py-3 rounded-md text-xs tracking-widest hover:bg-[#4a1f6e] transition"
                                 >
                                     VIEW MORE
                                 </a>
