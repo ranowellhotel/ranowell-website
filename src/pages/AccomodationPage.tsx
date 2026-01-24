@@ -54,7 +54,7 @@ const AccommodationPage = () => {
                         size: "275 Sq Ft",
                         bed: "King Bed",
                         occupancy: "2 Adults",
-                        buttonLink: "#",
+                        buttonLink: "https://www.booking.com/hotel/lk/ranowell.en-gb.html",
                     },
                     {
                         image: TripleRoomImg,
@@ -64,7 +64,7 @@ const AccommodationPage = () => {
                         size: "275 Sq Ft",
                         bed: "Triple Bed",
                         occupancy: "3 Guests",
-                        buttonLink: "#",
+                        buttonLink: "https://www.booking.com/hotel/lk/ranowell.en-gb.html",
                     },
                     {
                         image: FamilyRoomImg,
@@ -74,7 +74,7 @@ const AccommodationPage = () => {
                         size: "350 Sq Ft",
                         bed: "King Bed",
                         occupancy: "4 Guests",
-                        buttonLink: "#",
+                        buttonLink: "https://www.booking.com/hotel/lk/ranowell.en-gb.html",
                     },
                     {
                         image: WeddingRoomImg,
@@ -84,7 +84,7 @@ const AccommodationPage = () => {
                         size: "275 Sq Ft",
                         bed: "Queen Bed",
                         occupancy: "2 Adults",
-                        buttonLink: "#",
+                        buttonLink: "https://www.booking.com/hotel/lk/ranowell.en-gb.html",
                     },
                 ]}
             />
