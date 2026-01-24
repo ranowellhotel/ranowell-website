@@ -60,6 +60,8 @@ const Navbar: React.FC = () => {
                     <NavItem to="/accommodation" label="ACCOMMODATION" />
                     <Star />
                     <NavItem to="/gallery" label="GALLERY" />
+                    <Star/>
+                    <NavItem to="/fact-sheet" label="INFO"/>
                 </div>
 
                 {/* Mobile Dropdown */}
@@ -69,6 +71,8 @@ const Navbar: React.FC = () => {
                         <NavItem to="/weddings" label="WEDDINGS" onClick={() => setMenuOpen(false)} />
                         <NavItem to="/accommodation" label="ACCOMMODATION" onClick={() => setMenuOpen(false)} />
                         <NavItem to="/gallery" label="GALLERY" onClick={() => setMenuOpen(false)} />
+                        <NavItem to="/fact-sheet" label="INFO" onClick={() => setMenuOpen(false)}/>
+
                     </div>
                 )}
             </nav>

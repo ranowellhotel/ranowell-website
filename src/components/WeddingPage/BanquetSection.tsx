@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface BanquetItem {
     title: string;
@@ -20,7 +21,6 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
             data-aos-delay="100"
         >
             <div className="max-w-7xl mx-auto space-y-24">
-
                 {items.map((item, index) => {
                     const isReversed = index % 2 !== 0;
 
@@ -47,13 +47,18 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
                                     {item.description}
                                 </p>
 
-                                <a
-                                    href={item.buttonLink || "#"}
-                                    target="_blank"
-                                    className="inline-block bg-[#5C2D84] text-white px-7 py-3 rounded-md text-sm tracking-widest hover:bg-[#4a1f6e] transition"
+                                {/* ✅ SPA NAVIGATION */}
+                                <Link
+                                    to={item.buttonLink || "/"}
+                                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                                    className="
+                                        inline-block bg-[#5C2D84] text-white
+                                        px-7 py-3 rounded-md text-sm tracking-widest
+                                        hover:bg-[#4a1f6e] transition
+                                    "
                                 >
                                     VIEW MORE
-                                </a>
+                                </Link>
                             </div>
 
                             {/* IMAGE BLOCK */}
@@ -72,7 +77,6 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
                         </div>
                     );
                 })}
-
             </div>
         </section>
     );

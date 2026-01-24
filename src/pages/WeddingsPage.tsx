@@ -16,9 +16,9 @@ import Couple3 from "@/assets/weddings/couple3.png";
 
 import BanquetHeaderImg from "@/assets/banquetheader.png";
 
-import RoyalBanquetImg from "@/assets/banquet/royal.png";
-import KingsCourtImg from "@/assets/banquet/kings.png";
-import SparkleLoungeImg from "@/assets/banquet/sparkle.png";
+import RoyalBanquetImg from "@/assets/banquet/royal_banquet/royal.png";
+import KingsCourtImg from "@/assets/banquet/kings_court/kings.png";
+import SparkleLoungeImg from "@/assets/banquet/sparkle_lounge/sparkle.png";
 
 const WeddingsPage: React.FC = () => {
     return (
@@ -70,21 +70,21 @@ const WeddingsPage: React.FC = () => {
                         description:
                             "Discover exclusive offers designed to enhance your stay with special in-room amenities, complementary upgrades on availability, spa discounts and more. Choose from romantic getaways to extended vacations, at Heritance Hotels and Resorts.",
                         image: RoyalBanquetImg,
-                        buttonLink: "#",
+                        buttonLink: "/royalbanquet",
                     },
                     {
                         title: "Kings Court",
                         description:
                             "Discover exclusive offers designed to enhance your stay with special in-room amenities, complementary upgrades on availability, spa discounts and more. Choose from romantic getaways to extended vacations at Heritance Hotels and Resorts.",
                         image: KingsCourtImg,
-                        buttonLink: "#",
+                        buttonLink: "/kingscourt",
                     },
                     {
                         title: "Sparkle Lounge",
                         description:
                             "Discover exclusive offers designed to enhance your stay with special in-room amenities, complementary upgrades on availability, spa discounts and more. Choose from romantic getaways to extended vacations at Heritance Hotels and Resorts.",
                         image: SparkleLoungeImg,
-                        buttonLink: "#",
+                        buttonLink:  "/sparklelounge",
                     },
                 ]}
             />

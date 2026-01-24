@@ -129,14 +129,14 @@ const HomePage: React.FC = () => {
             {/* ---------------- SOCIALS SECTION ---------------- */}
             <SocialsSection
                 items={[
-                    { image: Social1, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social2, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social3, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social4, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social5, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social6, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social7, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
-                    { image: Social8, link: "https://www.facebook.com/share/p/1DP3YzMZxX/" },
+                    { image: Social1, link: "https://www.facebook.com/share/p/17nGAJ7Ri6/?mibextid=wwXIfr" },
+                    { image: Social2, link: "https://www.facebook.com/share/p/1HWE3gLLEB/?mibextid=wwXIfr" },
+                    { image: Social3, link: "https://www.facebook.com/share/p/18sBqVVsac/?mibextid=wwXIfr" },
+                    { image: Social4, link: "https://www.facebook.com/share/p/1FffwCnxJs/?mibextid=wwXIfr" },
+                    { image: Social5, link: "https://www.facebook.com/share/p/1BRgz4CcN4/?mibextid=wwXIfr" },
+                    { image: Social6, link: "https://www.facebook.com/share/p/17VAGF5G8a/?mibextid=wwXIfr" },
+                    { image: Social7, link: "https://www.facebook.com/share/p/1AWyQy4LRf/?mibextid=wwXIfr" },
+                    { image: Social8, link: "https://www.facebook.com/share/p/1Jde7WNQJu/?mibextid=wwXIfr" },
                 ]}
             />
 
