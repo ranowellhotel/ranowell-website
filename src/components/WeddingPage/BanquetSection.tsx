@@ -21,6 +21,7 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
             data-aos-delay="100"
         >
             <div className="max-w-7xl mx-auto space-y-24">
+
                 {items.map((item, index) => {
                     const isReversed = index % 2 !== 0;
 
@@ -77,6 +78,7 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
                         </div>
                     );
                 })}
+
             </div>
         </section>
     );

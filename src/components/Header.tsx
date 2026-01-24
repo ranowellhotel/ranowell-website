@@ -1,8 +1,9 @@
 import React from "react";
 
 interface HeaderProps {
-    image: string;
-    title: string;
+    image?: string;
+    videoSrc?: string;
+    title?: string;
     subtitle?: string;
     overlayColor?: string;
     overlayOpacity?: string;
@@ -11,29 +12,42 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({
                                            image,
+                                           videoSrc,
                                            title,
                                            subtitle,
                                            overlayColor = "bg-black",
                                            overlayOpacity = "bg-opacity-40",
-                                           height = "h-[82vh]"
+                                           height = "h-[82vh]",
                                        }) => {
     return (
-        <div
-            className={`relative w-full ${height} bg-center bg-cover flex items-center justify-center`}
-            style={{ backgroundImage: `url(${image})` }}
-            // data-aos="fade-up"
-            // data-aos-duration="1200"
-            // data-aos-delay="150"
-        >
-            {/* Overlay */}
+        <div className={`relative w-full ${height} overflow-hidden flex items-center justify-center`}>
+
+            {/* ---------- MEDIA (VIDEO OR IMAGE) ---------- */}
+            {videoSrc ? (
+                <video
+                    src={videoSrc}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
+            ) : (
+                <div
+                    className="absolute inset-0 bg-center bg-cover"
+                    style={{ backgroundImage: `url(${image})` }}
+                />
+            )}
+
+            {/* ---------- OVERLAY ---------- */}
             <div
                 className={`absolute inset-0 ${overlayColor} ${overlayOpacity}`}
                 data-aos="fade-in"
                 data-aos-delay="200"
                 data-aos-duration="1000"
-            ></div>
+            />
 
-            {/* Text Content */}
+            {/* ---------- TEXT CONTENT ---------- */}
             <div className="relative z-10 text-center text-white px-4">
 
                 {subtitle && (

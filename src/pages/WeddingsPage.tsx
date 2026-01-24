@@ -42,15 +42,28 @@ const WeddingsPage: React.FC = () => {
 
             {/* ---------------- WEDDINGS SECTION (COUPLES) ---------------- */}
             <WeddingsSection
-                title="Secure Your Dream Wedding at Ranowell Hotel!"
-                description="Reserve your special day with us and indulge in a celebration crafted with elegance. From exquisite décor to flawless service, our bespoke wedding packages are designed to transform your dream day into a timeless memory. Let us bring sophistication and romance to every moment."
+                title="Beautiful Celebrations at Ranowell"
+                description="Each wedding at Ranowell tells a unique love story."
                 items={[
-                    { image: Couple1, coupleNames: "Nipun & Ayesha" },
-                    { image: Couple2, coupleNames: "Christeen & Pramodh" },
-                    { image: Couple3, coupleNames: "Maleesha & Marlon" },
+                    {
+                        image: Couple1,
+                        coupleNames: "Sithumi & Navodh",
+                        pixiesetUrl: "https://ranowellhotel.pixieset.com/navodandsithumi/",
+                    },
+                    {
+                        image: Couple2,
+                        coupleNames: "Christeen & Pramodh",
+                        pixiesetUrl: "https://ranowellhotel.pixieset.com/christeenandpramodh/",
+                    },
+                    {
+                        image: Couple3,
+                        coupleNames: "Maleesha & Marlon",
+                        pixiesetUrl: "https://ranowellhotel.pixieset.com/maleeshaandmarlon/",
+                    },
                 ]}
-                buttonLink="https://pixieset.com" // replace with real link
+                buttonLink="https://ranowellhotel.pixieset.com/"
             />
+
 
             {/* ---------------- HEADER SECTION (BANQUET HERO) ---------------- */}
             <Header

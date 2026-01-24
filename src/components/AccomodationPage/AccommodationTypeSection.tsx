@@ -16,67 +16,70 @@ interface AccommodationTypeSectionProps {
 
 const AccommodationTypeSection: React.FC<AccommodationTypeSectionProps> = ({ items }) => {
     return (
-        <section
-            className="w-full bg-white"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-        >
-            <div>
-                {items.map((item, i) => (
-                    <div
-                        key={i}
-                        className="relative w-full h-[350px] md:h-[420px] lg:h-[500px] overflow-hidden"
-                        data-aos="fade-up"
-                        data-aos-delay={200 + i * 150}
-                    >
-                        {/* Background image */}
-                        <img
-                            src={item.image}
-                            alt={item.title}
-                            className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                        />
+        <section className="w-full bg-white">
+            {items.map((item, i) => (
+                <div
+                    key={i}
+                    className="relative w-full h-[300px] sm:h-[360px] md:h-[420px] lg:h-[500px] overflow-hidden"
+                >
+                    {/* Background Image */}
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                    />
 
-                        {/*❌ Removed: dark overlay blocking image */}
-                        {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
-
-                        {/* Overlay content ONLY (like original) */}
+                    {/* Overlay */}
+                    <div className="absolute inset-0 flex items-end md:items-center justify-center md:justify-start pb-4 md:pb-0">
                         <div
-                            className="absolute inset-0 flex items-center justify-center"
-                            data-aos="zoom-in"
-                            data-aos-delay={250 + i * 150}
+                            className="
+                                bg-black/60
+                                text-white
+                                text-center
+                                p-4 sm:p-5 md:p-8
+                                w-[90%] md:w-auto
+                                max-w-[360px] md:max-w-[420px]
+                                md:ml-16 lg:ml-24
+                                shadow-xl
+                                rounded-md
+                            "
                         >
-                            <div className="bg-black bg-opacity-50 text-white p-5 md:p-8 max-w-[400px] md:max-w-[450px] text-center shadow-lg">
+                            {/* Title */}
+                            <h3 className="text-base sm:text-lg md:text-2xl font-medium mb-2">
+                                {item.title}
+                            </h3>
 
-                                <h3 className="text-lg md:text-xl font-semibold uppercase tracking-wide mb-2">
-                                    {item.title}
-                                </h3>
+                            {/* Description */}
+                            <p className="text-xs sm:text-sm text-gray-200 leading-relaxed mb-3">
+                                {item.description}
+                            </p>
 
-                                <p className="text-xs md:text-sm text-gray-200 leading-relaxed mb-4">
-                                    {item.description}
-                                </p>
-
-                                {/* Amenities */}
-                                <div className="text-[11px] md:text-xs space-y-1 mb-5 text-gray-300">
-                                    <p><strong>Size:</strong> {item.size}</p>
-                                    <p><strong>Bed:</strong> {item.bed}</p>
-                                    <p><strong>Occupancy:</strong> {item.occupancy}</p>
-                                </div>
-
-                                {/* Button */}
-                                <a
-                                    href={item.buttonLink || "#"}
-                                    className="inline-block bg-[#5C2D84] text-white text-[11px] md:text-xs px-5 py-2 rounded-sm hover:bg-[#4a1a6a] transition tracking-wide"
-                                >
-                                    VIEW MORE
-                                </a>
-
+                            {/* Meta */}
+                            <div className="text-[11px] sm:text-xs text-gray-300 mb-4">
+                                {item.occupancy} &nbsp;|&nbsp; {item.size}
                             </div>
-                        </div>
 
+                            {/* Button */}
+                            <a
+                                href={item.buttonLink || "#"}
+                                className="
+                                    inline-block
+                                    bg-[#5C2D84]
+                                    text-white
+                                    text-[11px] sm:text-xs
+                                    px-6 py-2
+                                    rounded-full
+                                    tracking-widest
+                                    hover:bg-[#4a1f6e]
+                                    transition
+                                "
+                            >
+                                VIEW MORE
+                            </a>
+                        </div>
                     </div>
-                ))}
-            </div>
+                </div>
+            ))}
         </section>
     );
 };
