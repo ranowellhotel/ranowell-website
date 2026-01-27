@@ -14,7 +14,7 @@ import Couple1 from "@/assets/weddings/couple1.png";
 import Couple2 from "@/assets/weddings/couple2.png";
 import Couple3 from "@/assets/weddings/couple3.png";
 
-import BanquetHeaderImg from "@/assets/banquetheader.png";
+import BanquetHeaderImg from "@/assets/weddingpagesec.png";
 
 import RoyalBanquetImg from "@/assets/banquet/royal_banquet/royal.png";
 import KingsCourtImg from "@/assets/banquet/kings_court/kings.png";

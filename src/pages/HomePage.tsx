@@ -69,50 +69,49 @@ const HomePage: React.FC = () => {
                     {
                         image: Story1,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
-                        author: "Emma & Jack",
-                        location: "United Kingdom",
+                            "We chose Ranowell for our homecoming wedding and the service was impeccable. Every detail was handled with care, allowing us to truly enjoy our special day with family and friends in a beautiful, elegant setting.",
+                        author: "Alex Lakshan",
+                        location: "Sri Lanka",
                         bgColor: "#F0E1FA",
-
                     },
                     {
                         image: Story2,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
-                        author: "Emma & Jack",
-                        location: "United Kingdom",
+                            "From our first visit until the end of our wedding, the staff were incredibly supportive and kind. The food was outstanding and received many compliments. Special thanks for the smooth coordination that made our day stress-free.",
+                        author: "Milruwan & Ranitha",
+                        location: "Sri Lanka",
                         bgColor: "#FFFFFF",
                     },
                     {
                         image: Story3,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
-                        author: "Emma & Jack",
-                        location: "United Kingdom",
+                            "The service was truly exceptional and highly professional from start to finish. Every requirement was personally taken care of, making the entire experience seamless and reassuring.",
+                        author: "Harindi Devagiri",
+                        location: "Sri Lanka",
                         bgColor: "#F0E1FA",
                     },
                     {
                         image: Story4,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
-                        author: "Emma & Jack",
-                        location: "United Kingdom",
+                            "Our wedding at Ranowell was unforgettable. The team’s attention to detail, warm hospitality, and excellent coordination made our special day truly memorable.",
+                        author: "Inush Gayasara",
+                        location: "Sri Lanka",
                         bgColor: "#FFFFFF",
                     },
                     {
                         image: Story5,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
-                        author: "Emma & Jack",
-                        location: "United Kingdom",
+                            "From delicious food to friendly and helpful staff, everything was perfect. Even last-minute room arrangements were handled effortlessly. We couldn’t have asked for a better wedding experience.",
+                        author: "Rehan Dias",
+                        location: "Sri Lanka",
                         bgColor: "#F0E1FA",
                     },
                     {
                         image: Story6,
                         quote:
-                            "Our stay at Ocean Pearl Hotel was nothing short of amazing! The staff were incredibly warm and helpful, and the breakfast buffet with local Sri Lankan dishes like hoppers and kiribath was a highlight. Can’t wait to return!",
-                        author: "Emma & Jack",
-                        location: "United Kingdom",
+                            "Choosing Ranowell Hotel was one of the best decisions we made. The team was extremely organized, attentive, and ensured every detail was perfectly aligned with our plans.",
+                        author: "Aaqib Naffan",
+                        location: "Sri Lanka",
                         bgColor: "#FFFFFF",
                     },
                 ]}
