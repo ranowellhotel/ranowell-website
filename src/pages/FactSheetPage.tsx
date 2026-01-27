@@ -20,7 +20,7 @@ const FactSheetPage: React.FC = () => {
             {/* FACT SHEET IMAGE */}
             <div className="max-w-7xl mx-auto px-4 py-10">
                 <img
-                    src="/images/ranowell-fact-sheet.jpg"
+                    src="/images/ranowell-fact-sheet.webp"
                     alt="Ranowell Hotel & Banquets Fact Sheet"
                     className="w-full h-auto rounded-lg shadow-md"
                 />
