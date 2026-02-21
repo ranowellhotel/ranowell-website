@@ -74,6 +74,7 @@ const WeddingsSection: React.FC<WeddingsSectionProps> = ({
                                 <img
                                     src={item.image}
                                     alt={item.coupleNames}
+                                    loading="lazy"
                                     className="
                         w-full h-85 object-cover
                         transition-transform duration-500

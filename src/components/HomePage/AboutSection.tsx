@@ -73,6 +73,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ faqs, images }) => {
                             <img
                                 src={img}
                                 alt="About Ranowell"
+                                loading="lazy"
                                 className="
                                     w-full
                                     h-52 sm:h-60 md:h-72

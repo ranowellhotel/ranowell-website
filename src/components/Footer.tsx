@@ -16,11 +16,13 @@ const Footer: React.FC = () => {
 
                     {/* LEFT: LOGO */}
                     <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                        <img
-                            src={Logo}
-                            alt="Ranowell Hotel Logo"
-                            className="h-40 sm:h-24 object-contain mb-3"
-                        />
+                        <Link to="/" aria-label="Go to Homepage">
+                            <img
+                                src={Logo}
+                                alt="Ranowell Hotel Logo"
+                                className="h-40 sm:h-24 object-contain mb-3"
+                            />
+                        </Link>
                     </div>
 
                     {/* MIDDLE: NAVIGATION */}

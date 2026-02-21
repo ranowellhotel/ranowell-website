@@ -27,6 +27,7 @@ const CommentCard: React.FC<CommentCardProps> = ({
             <img
                 src={image}
                 alt="Hotel Review"
+                loading="lazy"
                 className="w-full h-56 object-cover"
             />
 

@@ -1,9 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import Header from "@/components/Header";
-
-// Header image
-// import GalleryHeaderImg from "@/assets/galleryheader.png";
+import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
 import Img1 from "@/assets/banquet/kings_court/kingsHall1.jpg";
@@ -22,14 +19,6 @@ const KingsCourtPage: React.FC = () => {
 
     return (
         <div className="w-full">
-
-            {/*/!* HEADER *!/*/}
-            {/*<Header*/}
-            {/*    image={GalleryHeaderImg}*/}
-            {/*    title="Explore Moments of Beauty Captured in Every Detail"*/}
-            {/*    subtitle="RANOWELL GALLERY"*/}
-            {/*    overlayColor="rgba(0,0,0,0.35)"*/}
-            {/*/>*/}
 
             {/* BACK BUTTON */}
             <div className="max-w-6xl mx-auto px-4 mt-8">
@@ -64,10 +53,12 @@ const KingsCourtPage: React.FC = () => {
                         data-aos="fade-up"
                         data-aos-delay={index * 60}
                     >
-                        <img
+                        <ImageWithLoader
                             src={src}
-                            alt={`Royal Banquet ${index + 1}`}
-                            className="w-full h-[300px] object-cover rounded shadow-sm"
+                            alt={`Kings Court ${index + 1}`}
+                            loading="lazy"
+                            containerClassName="w-full h-[300px] rounded shadow-sm"
+                            className="w-full h-full object-cover"
                         />
                     </div>
                 ))}

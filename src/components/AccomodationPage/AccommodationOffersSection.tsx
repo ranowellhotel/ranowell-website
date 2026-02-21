@@ -69,6 +69,7 @@ const AccommodationOffersSection: React.FC<AccommodationOffersSectionProps> = ({
                                 <img
                                     src={offer.image}
                                     alt={offer.title}
+                                    loading="lazy"
                                     className="w-full h-full object-cover transform group-hover:scale-105 transition duration-300"
                                 />
                             </div>

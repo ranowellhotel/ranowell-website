@@ -72,6 +72,7 @@ const BanquetSection: React.FC<BanquetSectionProps> = ({ items }) => {
                                 <img
                                     src={item.image}
                                     alt={item.title}
+                                    loading="lazy"
                                     className="w-full h-80 md:h-96 object-cover rounded-lg shadow-md"
                                 />
                             </div>

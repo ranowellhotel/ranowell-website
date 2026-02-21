@@ -28,6 +28,7 @@ const FactSheetPage: React.FC = () => {
                 <img
                     src="/images/ranowell-fact-sheet.webp"
                     alt="Ranowell Hotel & Banquets Fact Sheet"
+                    loading="lazy"
                     className={`w-full h-auto rounded-lg shadow-md transition-opacity duration-500 ${
                         isLoading ? "opacity-0" : "opacity-100"
                     }`}

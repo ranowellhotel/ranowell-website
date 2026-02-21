@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
+import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
 import GalleryHeaderImg from "@/assets/galleryheader.png";
@@ -142,10 +143,12 @@ const GalleryPage: React.FC = () => {
                         data-aos="fade-up"
                         data-aos-delay={index * 80}
                     >
-                        <img
+                        <ImageWithLoader
                             src={item.src}
                             alt="Gallery"
-                            className="w-full h-[300px] object-cover rounded shadow-sm"
+                            loading="lazy"
+                            containerClassName="w-full h-[300px] rounded shadow-sm"
+                            className="w-full h-full object-cover"
                         />
                     </div>
                 ))}

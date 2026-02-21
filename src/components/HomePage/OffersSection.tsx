@@ -84,6 +84,7 @@ const OffersSection: React.FC<OffersSectionProps> = ({ items }) => {
                                 <img
                                     src={item.image}
                                     alt={item.title}
+                                    loading="lazy"
                                     className="
                                         w-full
                                         h-[280px]

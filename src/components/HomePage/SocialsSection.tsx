@@ -65,6 +65,7 @@ const SocialsSection: React.FC<SocialsSectionProps> = ({ items }) => {
                             <img
                                 src={post.image}
                                 alt="Ranowell Facebook Post"
+                                loading="lazy"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
 

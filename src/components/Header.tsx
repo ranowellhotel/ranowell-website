@@ -36,6 +36,8 @@ const Header: React.FC<HeaderProps> = ({
                 <div
                     className="absolute inset-0 bg-center bg-cover"
                     style={{ backgroundImage: `url(${image})` }}
+                    role="img"
+                    aria-label={title || "Header background"}
                 />
             )}
 

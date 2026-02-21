@@ -56,7 +56,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
                 <video
                     className="w-full rounded-md shadow-md"
                     controls
-                    preload="metadata"
+                    preload="none"
                 >
                     <source src={videoSrc} type="video/mp4" />
                     Your browser does not support the video tag.

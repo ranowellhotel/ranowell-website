@@ -45,11 +45,13 @@ const Navbar: React.FC = () => {
 
                     {/* Logo */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2">
-                        <img
-                            src={Logo}
-                            alt="Ranowell Hotel"
-                            className="h-20 object-contain animate-fadeInSlow"
-                        />
+                        <Link to="/" aria-label="Go to Homepage">
+                            <img
+                                src={Logo}
+                                alt="Ranowell Hotel"
+                                className="h-20 object-contain animate-fadeInSlow"
+                            />
+                        </Link>
                     </div>
 
                     {/* Mobile Hamburger */}
@@ -78,7 +80,7 @@ const Navbar: React.FC = () => {
                         className="
                             hidden md:block
                             bg-[#6A1B9A] text-white text-sm
-                            px-11 py-3 rounded-full
+                            px-11 py-3 rounded-lg
                             tracking-widest
                             hover:bg-[#58167F] transition
                             ml-auto
@@ -102,11 +104,13 @@ const Navbar: React.FC = () => {
                             isScrolled ? "max-w-[5rem] opacity-100 mr-4" : "max-w-0 opacity-0 mr-0"
                         }`}
                     >
-                         <img
-                            src={Logo}
-                            alt="Ranowell Hotel"
-                            className="h-12 object-contain"
-                        />
+                         <Link to="/" aria-label="Go to Homepage">
+                             <img
+                                src={Logo}
+                                alt="Ranowell Hotel"
+                                className="h-12 object-contain"
+                            />
+                        </Link>
                     </div>
 
                     <NavItem to="/" label="HOME" />
@@ -129,7 +133,7 @@ const Navbar: React.FC = () => {
                             onClick={handleBookNowClick}
                             className="
                                 bg-[#6A1B9A] text-white text-xs
-                                px-6 py-2 rounded-full
+                                px-6 py-2 rounded-lg
                                 tracking-widest
                                 hover:bg-[#58167F] transition whitespace-nowrap
                             "
@@ -145,11 +149,13 @@ const Navbar: React.FC = () => {
                         isScrolled ? "max-h-20 opacity-100 py-2" : "max-h-0 opacity-0 py-0"
                     }`}
                 >
-                     <img
-                            src={Logo}
-                            alt="Ranowell Hotel"
-                            className="h-10 object-contain"
-                        />
+                     <Link to="/" aria-label="Go to Homepage">
+                         <img
+                                src={Logo}
+                                alt="Ranowell Hotel"
+                                className="h-10 object-contain"
+                            />
+                     </Link>
                      <button
                         aria-label="Toggle menu"
                         onClick={() => setMenuOpen(!menuOpen)}

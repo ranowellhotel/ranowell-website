@@ -41,6 +41,7 @@ const AccommodationTypeSection: React.FC<AccommodationTypeSectionProps> = ({ ite
                     <img
                         src={item.image}
                         alt={item.title}
+                        loading="lazy"
                         className="w-full h-full object-cover"
                     />
 
