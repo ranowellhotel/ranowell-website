@@ -89,11 +89,34 @@ export const STORIES_DATA = [
 ];
 
 export const ABOUT_FAQS = [
-    { question: "How can I place an order for delivery?", answer: "You can call our hotline or place orders online." },
-    { question: "Do you offer airport pickup?", answer: "Yes, airport pickup can be arranged on request." },
-    { question: "Are pets allowed at Ranowell?", answer: "Pets are allowed only in designated outdoor spaces." },
-    { question: "How many restaurants do you have?", answer: "We have 3 restaurants and 2 bars." },
-    { question: "Is the hotel child friendly?", answer: "Yes, we have family-friendly amenities and services." },
+    {
+        question: "Do you host wedding receptions and engagements?",
+        answer: "Yes, Ranowell Hotel specializes in wedding receptions, engagements, and all types of private celebrations with customizable packages.",
+    },
+    {
+        question: "How many hosts can you accomadate?",
+        answer: "We have receptions that can accommodate 50 pax to 900 pax.",
+    },
+    {
+        question: "Can we customize menus for events?",
+        answer: "Absolutely. We offer flexible catering options and custom menus to suit your preferences and event size.",
+    },
+    {
+        question: "Where is Ranowell Hotel located?",
+        answer: "Ranowell Hotel is conveniently located in Negombo with easy access and ample parking for guests.",
+    },
+    {
+        question: "What dining options are available at Ranowell Hotel?",
+        answer: "Guests can enjoy dining at our Riverside Deck Restaurant, which serves Sri Lankan and international cuisine in a relaxing riverside atmosphere.",
+    },
+    {
+        question: "How can I book a room or event at Ranowell Hotel Kochchikade?",
+        answer: "You can book directly by calling our reservation team or sending us a message through our official social media pages.",
+    },
+    {
+        question: "How can I book a or a room or an event or?",
+        answer: "You can call us,WhatsApp us, or E-mail an enquiry to arrange a visit or get a quote.",
+    },
 ];
 
 export const ABOUT_IMAGES = [About1, About2, About3, About4];
