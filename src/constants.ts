@@ -12,10 +12,10 @@ import Story4 from "@/assets/stories/story4.png";
 import Story5 from "@/assets/stories/story5.png";
 import Story6 from "@/assets/stories/story6.png";
 
-import About1 from "@/assets/about/about1.png";
-import About2 from "@/assets/about/about2.png";
-import About3 from "@/assets/about/about3.png";
-import About4 from "@/assets/about/about4.png";
+import About1 from "@/assets/about/about1.webp";
+import About2 from "@/assets/about/about2.webp";
+import About3 from "@/assets/about/about3.webp";
+import About4 from "@/assets/about/about4.webp";
 
 import Social2 from "@/assets/socials/s2.jpg";
 import Social3 from "@/assets/socials/s3.png";
