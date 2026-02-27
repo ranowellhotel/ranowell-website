@@ -7,14 +7,14 @@ import AccommodationOffersSection from "@/components/AccomodationPage/Accommodat
 
 // Images
 import HeaderImg from "@/assets/accommodationheader.png";
-import DoubleRoomImg from "@/assets/accommodation/double.png";
-import TripleRoomImg from "@/assets/accommodation/triple.png";
-import FamilyRoomImg from "@/assets/accommodation/family.png";
-import WeddingRoomImg from "@/assets/accommodation/wedding.png";
+import DoubleRoomImg from "@/assets/accommodation/double.webp";
+import TripleRoomImg from "@/assets/accommodation/triple.webp";
+import FamilyRoomImg from "@/assets/accommodation/family.webp";
+import WeddingRoomImg from "@/assets/accommodation/wedding.webp";
 
-import SpaImg from "@/assets/accommodation/spa.png";
-import LocalImg from "@/assets/accommodation/local.png";
-import BookEarlyImg from "@/assets/accommodation/book-early.png";
+import SpaImg from "@/assets/accommodation/spa.webp";
+import LocalImg from "@/assets/accommodation/local.webp";
+import BookEarlyImg from "@/assets/accommodation/book-early.webp";
 
 const AccommodationPage = () => {
     return (
