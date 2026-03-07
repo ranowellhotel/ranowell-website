@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
-import GalleryHeaderImg from "@/assets/galleryheader.png";
+import GalleryHeaderImg from "@/assets/galleryheader.webp";
 import Img from "@/assets/gallery/img.png";
 import Img1 from "@/assets/gallery/img_1.png";
 import Img2 from "@/assets/gallery/img_2.png";

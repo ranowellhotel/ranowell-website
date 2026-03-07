@@ -6,7 +6,7 @@ import AccommodationTypeSection from "@/components/AccomodationPage/Accommodatio
 import AccommodationOffersSection from "@/components/AccomodationPage/AccommodationOffersSection";
 
 // Images
-import HeaderImg from "@/assets/accommodationheader.png";
+import HeaderImg from "@/assets/accommodationheader.webp";
 import DoubleRoomImg from "@/assets/accommodation/double.webp";
 import TripleRoomImg from "@/assets/accommodation/triple.webp";
 import FamilyRoomImg from "@/assets/accommodation/family.webp";

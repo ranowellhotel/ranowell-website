@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "@/assets/Ranowell_logo.png";
+import Logo from "@/assets/Ranowell_logo.webp";
 import { Link, useLocation } from "react-router-dom";
 
 const BOOKING_URL = "https://www.booking.com/hotel/lk/ranowell.en-gb.html";

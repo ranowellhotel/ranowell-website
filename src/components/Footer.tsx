@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/assets/Ranowell_white.png";
+import Logo from "@/assets/Ranowell_white.webp";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import {Link} from "react-router-dom";
 

@@ -7,14 +7,14 @@ import WeddingsSection from "@/components/WeddingPage/WeddingsSection";
 import BanquetSection from "@/components/WeddingPage/BanquetSection";
 
 // IMAGES / VIDEOS — Replace with your actual files
-import WeddingsHeaderImg from "@/assets/weddingheader.png";
+import WeddingsHeaderImg from "@/assets/weddingheader.webp";
 import WeddingVideo from "@/assets/videos/wedding.mp4";
 
 import Couple1 from "@/assets/weddings/couple1.png";
 import Couple2 from "@/assets/weddings/couple2.png";
 import Couple3 from "@/assets/weddings/couple3.png";
 
-import BanquetHeaderImg from "@/assets/weddingpagesec.png";
+import BanquetHeaderImg from "@/assets/weddingpagesec.webp";
 
 import RoyalBanquetImg from "@/assets/banquet/royal_banquet/royal.png";
 import KingsCourtImg from "@/assets/banquet/kings_court/kings.png";
