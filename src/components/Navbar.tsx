@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "@/assets/Ranowell_logo.png";
 import { Link, useLocation } from "react-router-dom";
 
@@ -7,16 +7,6 @@ const BOOKING_URL = "https://www.booking.com/hotel/lk/ranowell.en-gb.html";
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [showBookingPopup, setShowBookingPopup] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     const handleBookNowClick = () => {
         setShowBookingPopup(true);
@@ -30,85 +20,19 @@ const Navbar: React.FC = () => {
     return (
         <header className="w-full bg-white sticky top-0 z-50 shadow-[0_2px_6px_rgba(0,0,0,0.1)] animate-navbarFade">
 
-            {/* ------------------ TOP BAR ------------------ */}
-            <div 
-                className={`w-full overflow-hidden transition-all duration-500 ease-in-out ${
-                    isScrolled 
-                        ? "max-h-0 opacity-0" 
-                        : "max-h-48 opacity-100 border-b border-gray-300"
-                }`}
-            >
-                <div className="my-3 px-6 py-6 flex items-center justify-between relative">
-
-                    {/* Left spacer (keeps logo centered) */}
-                    <div className="hidden md:block w-32" />
-
-                    {/* Logo */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2">
-                        <Link to="/" aria-label="Go to Homepage">
-                            <img
-                                src={Logo}
-                                alt="Ranowell Hotel"
-                                className="h-20 object-contain animate-fadeInSlow"
-                            />
-                        </Link>
-                    </div>
-
-                    {/* Mobile Hamburger */}
-                    <button
-                        aria-label="Toggle menu"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        className="md:hidden relative w-8 h-8 flex flex-col justify-center items-center gap-[6px]"
-                    >
-                        <span
-                            className={`block h-[2px] w-7 bg-[#6A1B9A] transition-all duration-300
-                            ${menuOpen ? "rotate-45 translate-y-[8px]" : ""}`}
-                        />
-                        <span
-                            className={`block h-[2px] w-7 bg-[#6A1B9A] transition-all duration-300
-                            ${menuOpen ? "opacity-0" : ""}`}
-                        />
-                        <span
-                            className={`block h-[2px] w-7 bg-[#6A1B9A] transition-all duration-300
-                            ${menuOpen ? "-rotate-45 -translate-y-[8px]" : ""}`}
-                        />
-                    </button>
-
-                    {/* Desktop Book Now */}
-                    <button
-                        onClick={handleBookNowClick}
-                        className="
-                            hidden md:block
-                            bg-[#6A1B9A] text-white text-sm
-                            px-11 py-3 rounded-lg
-                            tracking-widest
-                            hover:bg-[#58167F] transition
-                            ml-auto
-                        "
-                    >
-                        BOOK NOW
-                    </button>
-
-                </div>
-            </div>
-
-            {/* ------------------ NAV LINKS (and Scrolled Header Content) ------------------ */}
-            <nav className={`max-w-7xl mx-auto px-6 transition-all duration-500 ease-in-out ${isScrolled ? "py-2" : ""}`}>
+            {/* ------------------ NAV LINKS ------------------ */}
+            <nav className="max-w-7xl mx-auto px-6 py-2">
 
                 {/* Desktop Nav */}
-                <div className={`hidden md:flex items-center justify-center gap-8 tracking-widest text-sm transition-all duration-500 ease-in-out ${isScrolled ? "py-2" : "py-4"}`}>
+                <div className="hidden md:flex items-center justify-center gap-8 tracking-widest text-sm py-2">
                     
-                    {/* Scrolled Logo */}
-                    <div 
-                        className={`transition-all duration-500 ease-in-out overflow-hidden flex items-center ${
-                            isScrolled ? "max-w-[5rem] opacity-100 mr-4" : "max-w-0 opacity-0 mr-0"
-                        }`}
-                    >
+                    {/* Logo */}
+                    <div className="flex items-center mr-4">
                          <Link to="/" aria-label="Go to Homepage">
                              <img
                                 src={Logo}
                                 alt="Ranowell Hotel"
-                                className="h-12 object-contain"
+                                className="h-18 object-contain"
                             />
                         </Link>
                     </div>
@@ -123,12 +47,8 @@ const Navbar: React.FC = () => {
                     <Star/>
                     <NavItem to="/fact-sheet" label="INFO"/>
 
-                    {/* Scrolled Book Now Button */}
-                    <div 
-                        className={`transition-all duration-500 ease-in-out overflow-hidden flex items-center ${
-                            isScrolled ? "max-w-[10rem] opacity-100 ml-4" : "max-w-0 opacity-0 ml-0"
-                        }`}
-                    >
+                    {/* Book Now Button */}
+                    <div className="flex items-center ml-4">
                         <button
                             onClick={handleBookNowClick}
                             className="
@@ -143,12 +63,8 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Mobile Header (When Scrolled) */}
-                <div 
-                    className={`md:hidden flex items-center justify-between transition-all duration-500 ease-in-out overflow-hidden ${
-                        isScrolled ? "max-h-20 opacity-100 py-2" : "max-h-0 opacity-0 py-0"
-                    }`}
-                >
+                {/* Mobile Header */}
+                <div className="md:hidden flex items-center justify-between py-2">
                      <Link to="/" aria-label="Go to Homepage">
                          <img
                                 src={Logo}

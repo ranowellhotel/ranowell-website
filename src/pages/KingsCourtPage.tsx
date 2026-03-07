@@ -7,11 +7,14 @@ import Img1 from "@/assets/banquet/kings_court/kingsHall1.jpg";
 import Img2 from "@/assets/banquet/kings_court/kingsHall2.jpg";
 import Img3 from "@/assets/banquet/kings_court/kingsHall3.jpg";
 import Img4 from "@/assets/banquet/kings_court/kingsHall4.jpg";
-
+import Img5 from "@/assets/banquet/kings_court/kingsHall5.jpg";
+import Img6 from "@/assets/banquet/kings_court/kingsHall6.jpg";
+import Img7 from "@/assets/banquet/kings_court/kingsHall7.jpg";
+import Img8 from "@/assets/banquet/kings_court/kingsHall8.jpg";
 
 // Image list
 const images = [
-    Img1, Img2, Img3, Img4
+    Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8
 ];
 
 const KingsCourtPage: React.FC = () => {
