@@ -3,13 +3,22 @@ import { useNavigate } from "react-router-dom";
 import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
-import Img1 from "@/assets/banquet/sparkle_lounge/sparkleHall1.jpg";
-import Img2 from "@/assets/banquet/sparkle_lounge/sparkleHall2.jpg";
-import Img3 from "@/assets/banquet/sparkle_lounge/sparkleHall3.jpg";
+import SparkleHall1 from "@/assets/banquet/sparkle_lounge/sparkleHall1.jpg";
+import SparkleHall2 from "@/assets/banquet/sparkle_lounge/sparkleHall2.jpg";
+import SparkleHall3 from "@/assets/banquet/sparkle_lounge/sparkleHall3.jpg";
+import Sparkle from "@/assets/banquet/sparkle_lounge/sparkle.png";
+import Img6503 from "@/assets/banquet/sparkle_lounge/IMG_6503.jpg";
+import Img6504 from "@/assets/banquet/sparkle_lounge/IMG_6504.jpg";
+import Img6505 from "@/assets/banquet/sparkle_lounge/IMG_6505.jpg";
+import Img6506 from "@/assets/banquet/sparkle_lounge/IMG_6506.jpg";
+import Img6507 from "@/assets/banquet/sparkle_lounge/IMG_6507.jpg";
+import Img6508 from "@/assets/banquet/sparkle_lounge/IMG_6508.jpg";
+import Img6509 from "@/assets/banquet/sparkle_lounge/IMG_6509.jpg";
 
 // Image list
 const images = [
-    Img1, Img2, Img3
+    SparkleHall1, SparkleHall2, SparkleHall3, Sparkle,
+    Img6503, Img6504, Img6505, Img6506, Img6507, Img6508, Img6509,
 ];
 
 const SparkleLoungePage: React.FC = () => {

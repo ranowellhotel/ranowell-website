@@ -2,8 +2,8 @@
 
 // IMAGES
 import BuffetImg from "@/assets/offers/buffet2.png";
-import ReceptionImg from "@/assets/offers/reception2.png";
-import RoomImg from "@/assets/offers/room2.png";
+import ReceptionImg from "@/assets/offers/reception3.png";
+import RoomImg from "@/assets/offers/room3.webp";
 
 import Story1 from "@/assets/stories/story1.png";
 import Story2 from "@/assets/stories/story2.png";
@@ -32,9 +32,9 @@ export const OFFERS_DATA = [
     { image: BuffetImg, title: "Wedding Buffets" },
     { image: ReceptionImg, title: "Reception Halls" },
     { image: RoomImg, title: "Hotel Rooms" },
-    { image: ReceptionImg, title: "Reception Halls" },
-    { image: BuffetImg, title: "Wedding Buffets" },
-    { image: RoomImg, title: "Hotel Rooms" },
+    // { image: ReceptionImg, title: "Reception Halls" },
+    // { image: BuffetImg, title: "Wedding Buffets" },
+    // { image: RoomImg, title: "Hotel Rooms" },
 ];
 
 export const STORIES_DATA = [
