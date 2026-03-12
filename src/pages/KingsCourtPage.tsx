@@ -3,14 +3,14 @@ import { useNavigate } from "react-router-dom";
 import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
-import Img1 from "@/assets/banquet/kings_court/kingsHall1.jpg";
-import Img2 from "@/assets/banquet/kings_court/kingsHall2.jpg";
-import Img3 from "@/assets/banquet/kings_court/kingsHall3.jpg";
-import Img4 from "@/assets/banquet/kings_court/kingsHall4.jpg";
-import Img5 from "@/assets/banquet/kings_court/kingsHall5.jpg";
-import Img6 from "@/assets/banquet/kings_court/kingsHall6.jpg";
-import Img7 from "@/assets/banquet/kings_court/kingsHall7.jpg";
-import Img8 from "@/assets/banquet/kings_court/kingsHall8.jpg";
+import Img1 from "@/assets/banquet/kings_court/webp/kingsHall1.webp";
+import Img2 from "@/assets/banquet/kings_court/webp/kingsHall2.webp";
+import Img3 from "@/assets/banquet/kings_court/webp/kingsHall3.webp";
+import Img4 from "@/assets/banquet/kings_court/webp/kingsHall4.webp";
+import Img5 from "@/assets/banquet/kings_court/webp/kingsHall5.webp";
+import Img6 from "@/assets/banquet/kings_court/webp/kingsHall6.webp";
+import Img7 from "@/assets/banquet/kings_court/webp/kingsHall7.webp";
+import Img8 from "@/assets/banquet/kings_court/webp/kingsHall8.webp";
 
 // Image list
 const images = [

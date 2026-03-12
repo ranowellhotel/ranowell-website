@@ -1,30 +1,30 @@
 // src/constants.ts
 
 // IMAGES
-import BuffetImg from "@/assets/offers/buffet2.png";
+import BuffetImg from "@/assets/offers/webp/buffet2.webp";
 import ReceptionImg from "@/assets/offers/reception3.png";
 import RoomImg from "@/assets/offers/room3.webp";
 
-import Story1 from "@/assets/stories/story1.png";
-import Story2 from "@/assets/stories/story2.png";
-import Story3 from "@/assets/stories/story3.png";
-import Story4 from "@/assets/stories/story4.png";
-import Story5 from "@/assets/stories/story5.png";
-import Story6 from "@/assets/stories/story6.png";
+import Story1 from "@/assets/stories/webp/story1.webp";
+import Story2 from "@/assets/stories/webp/story2.webp";
+import Story3 from "@/assets/stories/webp/story3.webp";
+import Story4 from "@/assets/stories/webp/story4.webp";
+import Story5 from "@/assets/stories/webp/story5.webp";
+import Story6 from "@/assets/stories/webp/story6.webp";
 
 import About1 from "@/assets/about/about1.webp";
 import About2 from "@/assets/about/about2.webp";
 import About3 from "@/assets/about/about3.webp";
 import About4 from "@/assets/about/about4.webp";
 
-import Social2 from "@/assets/socials/s2.jpg";
-import Social3 from "@/assets/socials/s3.png";
-import Social4 from "@/assets/socials/s4.png";
-import Social5 from "@/assets/socials/s5.png";
-import Social6 from "@/assets/socials/s6.png";
-import Social7 from "@/assets/socials/s7.png";
-import Social8 from "@/assets/socials/s8.png";
-import Social9 from "@/assets/socials/s9.png";
+import Social2 from "@/assets/socials/webp/s2.webp";
+import Social3 from "@/assets/socials/webp/s3.webp";
+import Social4 from "@/assets/socials/webp/s4.webp";
+import Social5 from "@/assets/socials/webp/s5.webp";
+import Social6 from "@/assets/socials/webp/s6.webp";
+import Social7 from "@/assets/socials/webp/s7.webp";
+import Social8 from "@/assets/socials/webp/s8.webp";
+import Social9 from "@/assets/socials/webp/s9.webp";
 
 // ---------------- HOME PAGE DATA ----------------
 

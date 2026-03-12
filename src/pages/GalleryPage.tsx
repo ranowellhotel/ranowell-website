@@ -4,19 +4,19 @@ import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
 import GalleryHeaderImg from "@/assets/galleryheader.webp";
-import Img from "@/assets/gallery/img.png";
-import Img1 from "@/assets/gallery/img_1.png";
-import Img2 from "@/assets/gallery/img_2.png";
-import Img3 from "@/assets/gallery/img_3.png";
-import Img4 from "@/assets/gallery/img_4.png";
-import Img5 from "@/assets/gallery/img_5.png";
-import Img6 from "@/assets/gallery/img_6.png";
-import Img7 from "@/assets/gallery/img_7.png";
-import Img8 from "@/assets/gallery/img_8.png";
-import Img9 from "@/assets/gallery/img_9.png";
-import Img10 from "@/assets/gallery/img_10.png";
-import Img11 from "@/assets/gallery/img_11.png";
-import Img12 from "@/assets/gallery/img_12.png";
+import Img from "@/assets/gallery/webp/img.webp";
+import Img1 from "@/assets/gallery/webp/img_1.webp";
+import Img2 from "@/assets/gallery/webp/img_2.webp";
+import Img3 from "@/assets/gallery/webp/img_3.webp";
+import Img4 from "@/assets/gallery/webp/img_4.webp";
+import Img5 from "@/assets/gallery/webp/img_5.webp";
+import Img6 from "@/assets/gallery/webp/img_6.webp";
+import Img7 from "@/assets/gallery/webp/img_7.webp";
+import Img8 from "@/assets/gallery/webp/img_8.webp";
+import Img9 from "@/assets/gallery/webp/img_9.webp";
+import Img10 from "@/assets/gallery/webp/img_10.webp";
+import Img11 from "@/assets/gallery/webp/img_11.webp";
+import Img12 from "@/assets/gallery/webp/img_12.webp";
 
 const categories = ["ALL", "WEDDINGS", "DINING", "ACCOMMODATION"];
 

@@ -10,15 +10,15 @@ import BanquetSection from "@/components/WeddingPage/BanquetSection";
 import WeddingsHeaderImg from "@/assets/weddingheader.webp";
 import WeddingVideo from "@/assets/videos/wedding.mp4";
 
-import Couple1 from "@/assets/weddings/couple1.png";
-import Couple2 from "@/assets/weddings/couple2.png";
-import Couple3 from "@/assets/weddings/couple3.png";
+import Couple1 from "@/assets/weddings/webp/couple1.webp";
+import Couple2 from "@/assets/weddings/webp/couple2.webp";
+import Couple3 from "@/assets/weddings/webp/couple3.webp";
 
 import BanquetHeaderImg from "@/assets/weddingpagesec.webp";
 
-import RoyalBanquetImg from "@/assets/banquet/royal_banquet/royal.png";
-import KingsCourtImg from "@/assets/banquet/kings_court/kings.png";
-import SparkleLoungeImg from "@/assets/banquet/sparkle_lounge/sparkle.png";
+import RoyalBanquetImg from "@/assets/banquet/royal_banquet/webp/royal.webp";
+import KingsCourtImg from "@/assets/banquet/kings_court/webp/kings.webp";
+import SparkleLoungeImg from "@/assets/banquet/sparkle_lounge/webp/sparkle.webp";
 
 const WeddingsPage: React.FC = () => {
     return (

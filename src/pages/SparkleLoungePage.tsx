@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
-import SparkleHall1 from "@/assets/banquet/sparkle_lounge/sparkleHall1.jpg";
-import SparkleHall2 from "@/assets/banquet/sparkle_lounge/sparkleHall2.jpg";
-import SparkleHall3 from "@/assets/banquet/sparkle_lounge/sparkleHall3.jpg";
-import Sparkle from "@/assets/banquet/sparkle_lounge/sparkle.png";
+import SparkleHall1 from "@/assets/banquet/sparkle_lounge/webp/sparkleHall1.webp";
+import SparkleHall2 from "@/assets/banquet/sparkle_lounge/webp/sparkleHall2.webp";
+import SparkleHall3 from "@/assets/banquet/sparkle_lounge/webp/sparkleHall3.webp";
+import Sparkle from "@/assets/banquet/sparkle_lounge/webp/sparkle.webp";
 import Img6503 from "@/assets/banquet/sparkle_lounge/IMG_6503.jpg";
 import Img6504 from "@/assets/banquet/sparkle_lounge/IMG_6504.jpg";
 import Img6505 from "@/assets/banquet/sparkle_lounge/IMG_6505.jpg";
