@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "@/assets/Ranowell_white.webp";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
     return (
@@ -106,15 +106,7 @@ const Footer: React.FC = () => {
 
                 {/* COPYRIGHT */}
                 <p className="text-center font-questrial text-[10px] sm:text-sm tracking-wider opacity-90">
-                    © {new Date().getFullYear()} Ranowell Hotel. All rights reserved. | Developed by{" "}
-                    <a
-                        href="https://quantiq-edge-web.vercel.app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:opacity-80 transition"
-                    >
-                        Quantiq Edge Software Solutions
-                    </a>
+                    © {new Date().getFullYear()} Ranowell Hotel. All rights reserved. | Developed by Softbox Pvt. Ltd.
                 </p>
             </div>
         </footer>

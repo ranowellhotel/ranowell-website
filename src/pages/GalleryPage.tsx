@@ -81,8 +81,32 @@ const GalleryPage: React.FC = () => {
                 </h2>
             </div>
 
-            {/* CATEGORY TABS — PREMIUM V2 */}
-            <div className="relative flex justify-center gap-10 mt-6 mb-10">
+            {/* CATEGORY — MOBILE DROPDOWN */}
+            <div className="md:hidden flex justify-center mt-6 mb-10 px-4">
+                <select
+                    value={activeCategory}
+                    onChange={(e) => handleCategoryChange(e.target.value)}
+                    className="
+                        w-full max-w-xs px-4 py-3
+                        text-sm tracking-widest uppercase text-purple-700 font-semibold
+                        bg-white border border-purple-300 rounded-lg
+                        shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400
+                        appearance-none
+                        bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%20fill%3D%22%237c3aed%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M5.23%207.21a.75.75%200%20011.06.02L10%2011.293l3.71-4.06a.75.75%200%20011.08%201.04l-4.25%204.65a.75.75%200%2001-1.08%200L5.21%208.27a.75.75%200%2001.02-1.06z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E')]
+                        bg-[length:1.25rem] bg-[right_0.75rem_center] bg-no-repeat
+                        cursor-pointer transition-all duration-300
+                    "
+                >
+                    {categories.map((cat) => (
+                        <option key={cat} value={cat}>
+                            {cat}
+                        </option>
+                    ))}
+                </select>
+            </div>
+
+            {/* CATEGORY TABS — DESKTOP */}
+            <div className="hidden md:flex relative justify-center gap-10 mt-6 mb-10">
                 {categories.map((cat) => {
                     const isActive = activeCategory === cat;
 
