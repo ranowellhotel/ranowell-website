@@ -18,8 +18,6 @@ const FactSheetPage: React.FC = () => {
                 </button>
             </div>
 
-            <p>test</p>
-
             {/* FACT SHEET IMAGE */}
             <div className="max-w-7xl mx-auto px-4 py-10 relative min-h-[50vh] flex items-center justify-center">
                 {isLoading && (
