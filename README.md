@@ -1,4 +1,4 @@
-# Ranowell Hotel — Website Documentation
+# Ranowell Hotel — Website Documentation -updated 2025/03/22
 
 Welcome to the official documentation for the **Ranowell Hotel** website.  
 This guide is designed to help you understand the website structure, its pages, and key features.
