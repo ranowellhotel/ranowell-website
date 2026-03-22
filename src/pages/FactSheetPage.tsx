@@ -18,6 +18,8 @@ const FactSheetPage: React.FC = () => {
                 </button>
             </div>
 
+            <p>test</p>
+
             {/* FACT SHEET IMAGE */}
             <div className="max-w-7xl mx-auto px-4 py-10 relative min-h-[50vh] flex items-center justify-center">
                 {isLoading && (
@@ -29,9 +31,8 @@ const FactSheetPage: React.FC = () => {
                     src="/images/ranowell-fact-sheet.webp"
                     alt="Ranowell Hotel & Banquets Fact Sheet"
                     loading="lazy"
-                    className={`w-full h-auto rounded-lg shadow-md transition-opacity duration-500 ${
-                        isLoading ? "opacity-0" : "opacity-100"
-                    }`}
+                    className={`w-full h-auto rounded-lg shadow-md transition-opacity duration-500 ${isLoading ? "opacity-0" : "opacity-100"
+                        }`}
                     onLoad={() => setIsLoading(false)}
                 />
             </div>
