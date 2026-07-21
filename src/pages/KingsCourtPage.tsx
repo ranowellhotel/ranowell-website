@@ -3,32 +3,23 @@ import { useNavigate } from "react-router-dom";
 import ImageWithLoader from "@/components/ImageWithLoader";
 
 // Images
-import Img1 from "@/assets/banquet/kings_court/webp/kingsHall1.webp";
-import Img2 from "@/assets/banquet/kings_court/webp/kingsHall2.webp";
-import Img3 from "@/assets/banquet/kings_court/webp/kingsHall3.webp";
-import Img4 from "@/assets/banquet/kings_court/webp/kingsHall4.webp";
-import Img5 from "@/assets/banquet/kings_court/webp/kingsHall5.webp";
-import Img6 from "@/assets/banquet/kings_court/webp/kingsHall6.webp";
-import Img7 from "@/assets/banquet/kings_court/webp/kingsHall7.webp";
-import Img8 from "@/assets/banquet/kings_court/webp/kingsHall8.webp";
-import Img9 from "@/assets/banquet/kings_court/webp/kingsHall9.webp";
-import Img10 from "@/assets/banquet/kings_court/webp/kingsHall10.webp";
-import Img11 from "@/assets/banquet/kings_court/webp/kingsHall11.webp";
-import Img12 from "@/assets/banquet/kings_court/webp/kingsHall12.webp";
-import Img13 from "@/assets/banquet/kings_court/webp/kingsHall13.webp";
-import Img14 from "@/assets/banquet/kings_court/webp/kingsHall14.webp";
-import Img15 from "@/assets/banquet/kings_court/webp/kingsHall15.webp";
-import Img16 from "@/assets/banquet/kings_court/webp/kingsHall16.webp";
-import Img17 from "@/assets/banquet/kings_court/webp/kingsHall17.webp";
-import Img18 from "@/assets/banquet/kings_court/webp/kingsHall18.webp";
-import Img19 from "@/assets/banquet/kings_court/webp/kingsHall19.webp";
-import Img20 from "@/assets/banquet/kings_court/webp/kingsHall20.webp";
+import Img1 from "@/assets/banquet/kings_court/webp/kingsHall9.webp";
+import Img2 from "@/assets/banquet/kings_court/webp/kingsHall10.webp";
+import Img3 from "@/assets/banquet/kings_court/webp/kingsHall11.webp";
+import Img4 from "@/assets/banquet/kings_court/webp/kingsHall12.webp";
+import Img5 from "@/assets/banquet/kings_court/webp/kingsHall13.webp";
+import Img6 from "@/assets/banquet/kings_court/webp/kingsHall14.webp";
+import Img7 from "@/assets/banquet/kings_court/webp/kingsHall15.webp";
+import Img8 from "@/assets/banquet/kings_court/webp/kingsHall16.webp";
+import Img9 from "@/assets/banquet/kings_court/webp/kingsHall17.webp";
+import Img10 from "@/assets/banquet/kings_court/webp/kingsHall18.webp";
+import Img11 from "@/assets/banquet/kings_court/webp/kingsHall19.webp";
+import Img12 from "@/assets/banquet/kings_court/webp/kingsHall20.webp";
 
 // Image list
 const images = [
-    Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
-    Img9, Img10, Img11, Img12, Img13, Img14, Img15, Img16,
-    Img17, Img18, Img19, Img20
+    Img1, Img2, Img3, Img4, Img5, Img6,
+    Img7, Img8, Img9, Img10, Img11, Img12
 ];
 
 const KingsCourtPage: React.FC = () => {
