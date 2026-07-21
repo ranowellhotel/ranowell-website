@@ -11,10 +11,24 @@ import Img5 from "@/assets/banquet/kings_court/webp/kingsHall5.webp";
 import Img6 from "@/assets/banquet/kings_court/webp/kingsHall6.webp";
 import Img7 from "@/assets/banquet/kings_court/webp/kingsHall7.webp";
 import Img8 from "@/assets/banquet/kings_court/webp/kingsHall8.webp";
+import Img9 from "@/assets/banquet/kings_court/webp/kingsHall9.webp";
+import Img10 from "@/assets/banquet/kings_court/webp/kingsHall10.webp";
+import Img11 from "@/assets/banquet/kings_court/webp/kingsHall11.webp";
+import Img12 from "@/assets/banquet/kings_court/webp/kingsHall12.webp";
+import Img13 from "@/assets/banquet/kings_court/webp/kingsHall13.webp";
+import Img14 from "@/assets/banquet/kings_court/webp/kingsHall14.webp";
+import Img15 from "@/assets/banquet/kings_court/webp/kingsHall15.webp";
+import Img16 from "@/assets/banquet/kings_court/webp/kingsHall16.webp";
+import Img17 from "@/assets/banquet/kings_court/webp/kingsHall17.webp";
+import Img18 from "@/assets/banquet/kings_court/webp/kingsHall18.webp";
+import Img19 from "@/assets/banquet/kings_court/webp/kingsHall19.webp";
+import Img20 from "@/assets/banquet/kings_court/webp/kingsHall20.webp";
 
 // Image list
 const images = [
-    Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8
+    Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8,
+    Img9, Img10, Img11, Img12, Img13, Img14, Img15, Img16,
+    Img17, Img18, Img19, Img20
 ];
 
 const KingsCourtPage: React.FC = () => {
@@ -53,13 +67,12 @@ const KingsCourtPage: React.FC = () => {
                 {images.map((src, index) => (
                     <div
                         key={index}
-                        data-aos="fade-up"
-                        data-aos-delay={index * 60}
                     >
                         <ImageWithLoader
                             src={src}
                             alt={`Kings Court ${index + 1}`}
                             loading="lazy"
+                            decoding="async"
                             containerClassName="w-full h-[300px] rounded shadow-sm"
                             className="w-full h-full object-cover"
                         />
