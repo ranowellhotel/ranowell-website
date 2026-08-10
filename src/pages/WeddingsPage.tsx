@@ -8,7 +8,7 @@ import BanquetSection from "@/components/WeddingPage/BanquetSection";
 
 // IMAGES / VIDEOS — Replace with your actual files
 import WeddingsHeaderImg from "@/assets/weddingheader.webp";
-import WeddingVideo from "@/assets/videos/wedding.mp4";
+import WeddingVideo from "@/assets/videos/ranowell_hero_vid_4.mp4";
 
 import Couple1 from "@/assets/weddings/webp/couple1.webp";
 import Couple2 from "@/assets/weddings/webp/couple2.webp";
@@ -36,7 +36,7 @@ const WeddingsPage: React.FC = () => {
             <VideoSection
                 label="RANOWELL"
                 title="Timeless Moments, Coastal Charm – Weddings in Negombo, Sri Lanka"
-                description="Celebrate your special day in style at Ranowell Hotel, where every detail is crafted to perfection. Our elegant venues, exceptional service, and personalized wedding packages ensure a truly unforgettable experience. Let us bring your dream wedding to life with customized décor, exquisite catering, and seamless planning, all set against the beautiful backdrop of Rathnapura."
+                description="Celebrate your special day in style at Ranowell Hotel, where every detail is crafted to perfection. Our elegant venues, exceptional service, and personalized wedding packages ensure a truly unforgettable experience. Let us bring your dream wedding to life with customized décor, exquisite catering, and seamless planning, all set against the beautiful backdrop of Negombo."
                 videoSrc={WeddingVideo}
             />
 
